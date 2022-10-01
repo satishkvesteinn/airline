@@ -1,0 +1,123 @@
+.navbarContainer {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    height: 55px;
+    background-color: rgb(36, 36, 36);
+
+    .navbarWrapper {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        align-items: center;
+        font-size: 0.9rem;
+
+        @media screen and (max-width: 850px) {
+            flex-direction: column;
+            width: 100%;
+        }
+
+
+        .navbarSectionLeftTop {
+            font-size: 0.83rem;
+            font-weight: 400;
+            color: rgb(228, 228, 228);
+        }
+
+        .navbarSectionLeftBottom {
+            font-size: 0.74rem;
+            color: rgb(167, 167, 167);
+        }
+
+        .navbarSectionMiddle {
+            transform: rotate(90deg);
+            margin: 0 8px;
+
+            i {
+                font-size: 20px;
+                color: rgb(167, 167, 167);
+            }
+        }
+
+
+        .divider {
+            height: 30px;
+            width: 1px;
+            background-color: rgb(95, 95, 95);
+
+            @media screen and (max-width: 850px) {
+                height: 1px;
+                width: 100%;
+            }
+        }
+
+        .navbarWrapperTop {
+            padding: 0 15px;
+            flex: 1;
+            height: 100%;
+
+
+            .navbarSection{
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+
+            @media screen and (max-width: 850px) {
+                width: 100%;
+            }
+        }
+
+
+        .navbarWrapperMiddle {
+            display: flex;
+            align-items: center;
+            flex: 1.5;
+            
+            .navbarSection{
+                flex: 1;
+                padding: 0 1rem;
+            }
+            
+
+            @media screen and (max-width: 850px) {
+                width: 100%;
+                flex: 1;
+
+                .divider {
+                    height: 30px;
+                    width: 1px;
+                }
+            }
+        }
+
+
+        .navbarWrapperBottom {
+            flex: 1.5;
+            align-items: center;
+            display: flex;
+            
+            .navbarSection{
+                flex: 1;
+                padding: 0 1rem;
+            }
+
+            @media screen and (max-width: 850px) {
+                width: 100%;
+                flex: 1;
+
+                .divider {
+                    height: 30px;
+                    width: 1px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        height: 160px;
+    }
+}

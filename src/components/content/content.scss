@@ -1,0 +1,288 @@
+.contentContainer {
+    display: flex;
+    padding: 1rem;
+    gap: 20px;
+    border-radius: 6px;
+    background: linear-gradient(315deg, #e6e6e6, #ffffff);
+    box-shadow: -5px -5px 20px #d6d6d6,
+        5px 5px 20px #ffffff;
+
+    .left {
+        flex: .6;
+        padding: 5px;
+        // background-color: red;
+
+
+        .top {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 2rem;
+
+            .topleft {
+                width: 40px;
+                height: 40px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .topRight {
+                display: flex;
+                flex-direction: column;
+                line-height: 1.1;
+
+                .flightName {
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                }
+
+                .flightNumber {
+                    font-size: .8rem;
+                    color: rgb(100, 100, 100);
+                }
+            }
+        }
+
+        .bottom {
+            button {
+                border: none;
+                padding: 6px 8px;
+                border-radius: 5px;
+                margin-bottom: 5px;
+                color: white;
+                font-size: .9rem;
+                cursor: pointer;
+                background-color: orange;
+            }
+
+            .seats {
+                color: orangered;
+                font-size: 0.9rem;
+            }
+
+        }
+
+        @media screen and (max-width: 820px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .top {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .leftRight {
+        flex: 1;
+        padding: 0 10px;
+        display: flex;
+        gap: 5px;
+        justify-content: space-between;
+
+
+        .leftRightLeft {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .leftRightMiddle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .Top,
+        .Bottom {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: rgb(100, 100, 100);
+        }
+
+        .Middle {
+            font-size: .9rem;
+            font-weight: 600;
+        }
+
+        .middleMiddle {
+            margin: 5px 0;
+            width: 100%;
+            height: 2px;
+            background-color: rgb(100, 100, 100);
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: 2px;
+                top: -2px;
+                height: 10px;
+                transform: rotate(-120deg);
+                background-color: inherit;
+                width: 2px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                right: 2px;
+                bottom: -2px;
+                height: 10px;
+                transform: rotate(120deg);
+                background-color: inherit;
+                width: 2px;
+            }
+
+        }
+    }
+
+    .rightLeftContainer {
+        flex: 1.6;
+
+        .rightLeftItem {
+            padding: .4rem;
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+            border-bottom: 1px solid rgba(100, 100, 100, 0.336);
+
+
+            .rightLeftWrapper {
+                display: flex;
+                gap: 1rem;
+            }
+
+            .rightLeftTop {
+                display: flex;
+                align-items: flex-end;
+                padding-bottom: 5px;
+
+                input {
+                    font-size: 50px !important;
+                }
+            }
+
+            .rightLeftRight {
+                display: flex;
+                flex-direction: column;
+                line-height: 1.3;
+
+                .rightLeftRightTop {
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                    color: rgb(100, 100, 100);
+                }
+
+                .rightLeftRightBottom {
+                    display: flex;
+                    align-items: flex-end;
+                    gap: 5px;
+
+                    span {
+                        font-size: 0.8rem;
+                        font-weight: 400;
+                        color: rgb(100, 100, 100);
+                    }
+
+                    .price {
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        color: unset;
+                    }
+                }
+            }
+
+            .rightLeftBottom {
+                display: flex;
+                gap: .3rem;
+
+                span {
+                    color: rgb(100, 100, 100);
+                    font-size: 0.8rem;
+
+                    &.coupon {
+                        background-color: rgb(250, 224, 137);
+                        padding: 1px 5px;
+                        font-size: .74rem;
+                        color: rgb(66, 66, 66);
+                        border-radius: 2px;
+                    }
+
+                    &.published {
+                        background-color: rgba(0, 148, 0, 0.616);
+                        padding: 1px 5px;
+                        font-size: .74rem;
+                        color: rgb(66, 66, 66);
+                        border-radius: 2px;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 850px) {}
+    }
+
+    .right {
+        flex: 0.5;
+
+        button {
+            border: none;
+            padding: 7px 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            color: white;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            background-color: orange;
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        flex-direction: column;
+
+        .rightLeftContainer {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex: 0;
+            flex-wrap: wrap;
+        }
+
+        .rightLeftItem {
+            width: 49%;
+        }
+
+        .right {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+
+            button{
+                width: 30%;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 645px) {
+        flex-direction: column;
+
+        .rightLeftItem {
+            width: 100%;
+        }
+
+        .right {
+    
+            button {
+                width: 60%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+}

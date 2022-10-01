@@ -1,0 +1,136 @@
+.menuSlideContae {
+    height: 100%;
+
+    .menuSlideWrapper {
+        height: 100%;
+        padding: 0.5rem;
+
+
+        .divider {
+            width: 100%;
+            height: 1px;
+            background-color: rgb(95, 95, 95);
+
+            @media screen and (max-width: 850px) {
+                height: 1px;
+                width: 100%;
+            }
+        }
+
+        .filterHeading {
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin: 4px 0;
+        }
+
+        .show {
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+
+            .showInc,
+            .showNet {
+                user-select: none;
+                font-size: 0.9rem;
+                flex: 1;
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer !important;
+
+                label {
+                    width: 100%;
+                }
+
+                input {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .stops {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+
+            .stopsWrapper {
+                display: flex;
+
+                span {
+                    border: 1px solid black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    height: 30px;
+                    width: 50px;
+                    border-right: none;
+
+                    &:last-child {
+                        border-right: 1px solid black;
+                    }
+                }
+            }
+        }
+
+        .departure {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+
+            .departureWrapper {
+                display: flex;
+
+                .departureWrapperBox {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: 50px;
+                    width: 60px;
+                    border: 1px solid black;
+                    border-right: none;
+
+                    &:last-child {
+                        border-right: 1px solid black;
+                    }
+
+                    span {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        
+        .arrival {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+
+            .arrivalWrapper {
+                display: flex;
+
+                .arrivalWrapperBox {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: 50px;
+                    width: 60px;
+                    border: 1px solid black;
+                    border-right: none;
+
+                    &:last-child {
+                        border-right: 1px solid black;
+                    }
+
+                    span {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

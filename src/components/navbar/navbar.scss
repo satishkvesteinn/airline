@@ -40,6 +40,19 @@
             }
         }
 
+        .navbarSection{
+            button{
+                border: none;
+                background-color: white;
+                border-radius: 4px;
+                cursor: pointer;
+                padding: 4px 20px;
+                font-size: 0.8rem;
+                font-weight: 500;
+
+            }
+        }
+
 
         .divider {
             height: 30px;

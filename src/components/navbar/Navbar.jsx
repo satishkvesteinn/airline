@@ -11,7 +11,7 @@ const Navbar = () => {
                             <div className="navbarSectionLeftBottom">Delhi, India</div>
                         </div>
                         <div className="navbarSectionMiddle">
-                            <i class="bi bi-airplane-fill"></i>
+                            <i className="bi bi-airplane-fill"></i>
                         </div>
                         <div className="navbarSectionRight">
                             <div className="navbarSectionLeftTop">BOM</div>

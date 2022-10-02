@@ -14,7 +14,7 @@ const Content = () => {
                     </span>
                 </div>
                 <div className="bottom">
-                    <button>View Details <i class="bi bi-plus"></i></button>
+                    <button>View Details <i className="bi bi-plus"></i></button>
                     <p className='seats'>Seats left : 9</p>
                 </div>
             </div>

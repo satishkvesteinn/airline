@@ -2,10 +2,8 @@
     display: flex;
     padding: 1rem;
     gap: 20px;
-    border-radius: 6px;
-    background: linear-gradient(315deg, #e6e6e6, #ffffff);
-    box-shadow: -5px -5px 20px #d6d6d6,
-        5px 5px 20px #ffffff;
+    background-color: white;
+    border-radius: 4px;
 
     .left {
         flex: .6;
@@ -144,6 +142,7 @@
         flex: 1.6;
 
         .rightLeftItem {
+            cursor: pointer;
             padding: .4rem;
             display: flex;
             flex-direction: column;
@@ -262,7 +261,7 @@
             display: flex;
             justify-content: end;
 
-            button{
+            button {
                 width: 30%;
             }
         }
@@ -277,7 +276,7 @@
         }
 
         .right {
-    
+
             button {
                 width: 60%;
                 margin: 0 auto;
